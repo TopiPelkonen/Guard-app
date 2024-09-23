@@ -6,6 +6,8 @@
 - nodejs (react nativea varten)
 - npm (pakettien / kirjastojen hallinta ja asennus työkalu)
 - Kun repositioryn clone:ttaa, `npm install` komento lataa kaikki projektin riippuvuudet kehitysympäristöösi
+- npm install -g expo-cli (selain testaukseen)
+- npm install -g mongosh (tietokanta kommunikointiin cmd:stä)
 # kansiot
 - App structure, uml kaavio
 - backend, nodejs backendi josta otetaan yhteys tietokantaan
