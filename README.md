@@ -11,7 +11,7 @@
 # kansiot
 - App structure, uml kaavio
 - backend, nodejs backendi josta otetaan yhteys tietokantaan
-- react-native/myApp, frontend, ui, itse sovelluksen käyttöliittymä
+- myApp, frontend, ui, itse sovelluksen käyttöliittymä
    
 # Kirjastot joita käytetään
 
