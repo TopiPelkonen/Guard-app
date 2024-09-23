@@ -1,0 +1,12 @@
+käyttöliittymän suunnittelu / ulkonäkö
+eri sivut
+napit
+näkymä
+toiminnallisuus
+
+backend
+mallit
+endpointit
+api pyynnöt
+näkymät
+tietokanta keskustelu
