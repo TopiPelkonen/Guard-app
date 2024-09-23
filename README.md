@@ -1,6 +1,11 @@
 # Dev branch
 - branch jota voi käyttää kehitykseen ja testaukseen
 - main tarkoitettu lopulliseksi tulokseksi kun todetaan että dev branchin muutokset ok
+# kansiot
+- App structure, uml kaavio
+- backend, nodejs backendi josta otetaan yhteys tietokantaan
+- react-native/myApp, frontend, ui, itse sovelluksen käyttöliittymä
+   
 # Kirjastot joita käytetään
 
 ## nodejs, backend
