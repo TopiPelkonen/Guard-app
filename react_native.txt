@@ -1,0 +1,7 @@
+lataa node.js
+npm install -g expo-cli
+npx create-expo-app myApp
+cd myApp
+npm start
+
+osoite: localhost:8081

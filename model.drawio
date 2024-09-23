@@ -4,8 +4,20 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="6DlvTgvoP62fpNUdaAW--27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6DlvTgvoP62fpNUdaAW--1" target="6DlvTgvoP62fpNUdaAW--2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="6DlvTgvoP62fpNUdaAW--1" value="Sovellus/front end" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="320" y="-20" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6DlvTgvoP62fpNUdaAW--28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6DlvTgvoP62fpNUdaAW--2" target="6DlvTgvoP62fpNUdaAW--23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6DlvTgvoP62fpNUdaAW--29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6DlvTgvoP62fpNUdaAW--2" target="6DlvTgvoP62fpNUdaAW--4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6DlvTgvoP62fpNUdaAW--30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6DlvTgvoP62fpNUdaAW--2" target="6DlvTgvoP62fpNUdaAW--14">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="6DlvTgvoP62fpNUdaAW--2" value="Palvelin/backend" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="320" y="150" width="160" height="80" as="geometry" />
@@ -31,8 +43,16 @@
         <mxCell id="6DlvTgvoP62fpNUdaAW--11" value="qr koodi tunnistus" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="340" y="-90" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="6DlvTgvoP62fpNUdaAW--31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="6DlvTgvoP62fpNUdaAW--14" target="6DlvTgvoP62fpNUdaAW--15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="6DlvTgvoP62fpNUdaAW--14" value="noSql tietokanta" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
           <mxGeometry x="200" y="215" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6DlvTgvoP62fpNUdaAW--32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6DlvTgvoP62fpNUdaAW--15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-40" y="255" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="6DlvTgvoP62fpNUdaAW--15" value="&lt;div&gt;&lt;b&gt;Taulut&lt;/b&gt;&lt;/div&gt;käyttäjät&lt;div&gt;tarkistuspisteet&lt;/div&gt;&lt;div&gt;reitit&lt;/div&gt;&lt;div&gt;tarkistus syöte&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="20" y="190" width="120" height="130" as="geometry" />
