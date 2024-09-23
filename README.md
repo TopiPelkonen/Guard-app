@@ -1,6 +1,11 @@
-# Dev branch
+# Yleisesti
+## dev branchi
 - branch jota voi käyttää kehitykseen ja testaukseen
 - main tarkoitettu lopulliseksi tulokseksi kun todetaan että dev branchin muutokset ok
+## mitä tarvii asentaa
+- nodejs (react nativea varten)
+- npm (pakettien / kirjastojen hallinta ja asennus työkalu)
+- Kun repositioryn clone:ttaa, `npm install` komento lataa kaikki projektin riippuvuudet kehitysympäristöösi
 # kansiot
 - App structure, uml kaavio
 - backend, nodejs backendi josta otetaan yhteys tietokantaan
