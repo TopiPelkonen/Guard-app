@@ -1,3 +1,6 @@
+# Dev branch
+- branch jota voi käyttää kehitykseen ja testaukseen
+- main tarkoitettu lopulliseksi tulokseksi kun todetaan että dev branchin muutokset ok
 # Kirjastot joita käytetään
 
 ## nodejs, backend
