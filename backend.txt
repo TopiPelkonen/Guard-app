@@ -1,5 +1,0 @@
-nodejs
-
-express, routing
-dotenv, env. muuttujat
-mongoose, tietokanta mallit

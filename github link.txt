@@ -1,3 +1,0 @@
-https://github.com/oskari6/Guard-app.git
-
-git clone [url]
