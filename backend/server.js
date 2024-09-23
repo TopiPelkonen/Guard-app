@@ -6,8 +6,12 @@ const port = process.env.PORT || 8000;
 
 dotenv.config();
 
+//Routes
+const userRoutes = require("./routes/user_routes");
+app.use("/api/users", productRoutes);
+
 //DB connection
-app.get("/", async (reg, res) => {
+app.get("/", async (req, res) => {
   try {
     const db = await connectToDB();
     const collection = db.collection("users");
