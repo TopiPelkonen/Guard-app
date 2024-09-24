@@ -1,7 +1,38 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import { View, Text, Button, StyleSheet, TextInput } from "react-native";
+import { AuthContext } from "../components/AuthContext";
 
 const SignInScreen = ({ navigation }) => {
+  const [name, setName] = useState("");
+  const [password, setPassword] = useState("");
+  const { isLoggedIn, setIsLoggedIn } = useContext(AuthContext);
+
+  const handleLogin = async () => {
+    const userData = {
+      name,
+      password,
+    };
+    try {
+      const response = await fetch("http://localhost:8000/api/users", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(userData),
+      });
+      const data = await response.json();
+
+      if (response.ok) {
+        setIsLoggedIn(true);
+        navigation.navigate("Koti");
+      } else if (response.status === 401) {
+        Alert.alert("Väärä salasana");
+        return;
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
   return (
     <View style={styles.container}>
       <View style={styles.navbar}>
@@ -20,8 +51,19 @@ const SignInScreen = ({ navigation }) => {
       <View style={styles.authentication}>
         <View style={styles.authContainer}>
           <Text style={styles.title}>Kirjaudu sisään</Text>
-          <TextInput style={styles.input} placeholder="Nimi" />
-          <TextInput style={styles.input} placeholder="Salasana" />
+          <TextInput
+            style={styles.input}
+            placeholder="Nimi"
+            value={name}
+            onChangeText={setName}
+          />
+          <TextInput
+            style={styles.input}
+            placeholder="Salasana"
+            value={password}
+            onChangeText={setPassword}
+          />
+          <Button title="Kirjaudu" onPress={handleLogin} />
         </View>
       </View>
     </View>
