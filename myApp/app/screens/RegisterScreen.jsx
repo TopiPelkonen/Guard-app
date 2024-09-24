@@ -12,7 +12,7 @@ const RegisterScreen = ({ navigation }) => {
       Alert.alert("Salasanat eivät ole samat");
       return;
     }
-    //asdasd
+    //tän kommentin voi poistaa myöhemmin
     const userData = {
       name,
       password,
