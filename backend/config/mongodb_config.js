@@ -1,21 +1,14 @@
 require("dotenv").config();
-
-const { MongoClient } = require("mongodb");
+const mongoose = require("mongoose");
 
 const uri = process.env.MONGO_URI;
 
-let db;
-
 const connectToDB = async () => {
-  if (db) return db;
-
   try {
-    const client = new MongoClient(uri);
-    await client.connect();
-    db = client.db("Guard_app");
-    return db;
+    await mongoose.connect(uri);
+    console.log("Connected to MongoDB via Mongoose");
   } catch (error) {
-    console.error("failed to connect to db", error);
+    console.error("Failed to connect to DB", error);
     process.exit(1);
   }
 };

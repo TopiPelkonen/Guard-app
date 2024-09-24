@@ -1,5 +1,5 @@
-const User = require("..models/User");
-const bcrypt = require("bcrypt.js"); //hashing
+const User = require("../models/User");
+const bcrypt = require("bcryptjs"); //hashing
 
 //POST
 exports.createUser = async (req, res) => {
@@ -9,14 +9,18 @@ exports.createUser = async (req, res) => {
     const hashedPassword = await bcrypt.hash(password, salt);
     const user = new User({
       name,
-      hashedPassword,
+      password: hashedPassword,
       passcode,
     });
 
     const savedUser = await user.save();
     res.status(201).json(savedUser);
   } catch (error) {
-    res.status(500).json({ message: "Failed to create a new user" });
+    console.error("Error creating user:", error); // Log the error for debugging
+
+    res
+      .status(500)
+      .json({ message: "Failed to create a new user", error: error.message });
   }
 };
 
@@ -33,7 +37,7 @@ exports.getUser = async (req, res) => {
       return res.status(401).json({ message: "Invalid password" });
     }
     res.status(200).json({
-      message: "Login successfull",
+      message: "Login successful",
       user: {
         id: user._id,
         name: user.name,
@@ -62,4 +66,3 @@ exports.getPasscode = async (req, res) => {
       .json({ message: "Failed to retrieve user", error: error.message });
   }
 };
-
